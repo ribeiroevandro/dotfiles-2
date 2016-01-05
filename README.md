@@ -1,2 +1,3 @@
-# dotfiles
-:dancers: My Ubuntu dotfiles.
+# .files
+
+My Ubuntu dotfiles :dancers:

@@ -11,8 +11,8 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'Ruby' 'ruby'
-  install_package 'Ruby dev' 'ruby-dev'
+  install_package 'Ruby' 'ruby' '-qqy'
+  install_package 'Ruby dev' 'ruby-dev' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

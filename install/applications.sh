@@ -10,11 +10,11 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'Yakuake' 'yakuake'
+  install_package 'Yakuake' 'yakuake' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'Chromium' 'chromium-browser'
+  install_package 'Chromium' 'chromium-browser' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -28,20 +28,20 @@ main() {
 
   fi
 
-  install_package 'Firefox Nightly' 'firefox-trunk'
+  install_package 'Firefox Nightly' 'firefox-trunk' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'Flash' 'flashplugin-installer'
-  install_package 'Flash-nonfree' 'pepperflashplugin-nonfree'
+  install_package 'Flash' 'flashplugin-installer' '-qqy'
+  install_package 'Flash-nonfree' 'pepperflashplugin-nonfree' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'VirtualBox' 'virtualbox'
+  install_package 'VirtualBox' 'virtualbox' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'FileZilla' 'filezilla'
+  install_package 'FileZilla' 'filezilla' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

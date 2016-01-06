@@ -11,7 +11,7 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'python-software-properties' 'python-software-properties'
+  install_package 'python-software-properties' 'python-software-properties' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -25,7 +25,7 @@ main() {
 
   fi
 
-  install_package 'fish-shell' 'fish'
+  install_package 'fish-shell' 'fish' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   #

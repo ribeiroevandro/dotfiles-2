@@ -11,20 +11,20 @@ main() {
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   # Tools for compiling/building software from source
-  install_package 'Build Essential' 'build-essential'
+  install_package 'Build Essential' 'build-essential' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'cURL' 'curl'
+  install_package 'cURL' 'curl' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'Git' 'git'
+  install_package 'Git' 'git' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   curl -sL https://deb.nodesource.com/setup_0.12 | sudo -E bash -
-  install_package 'NodeJS' 'nodejs'
+  install_package 'NodeJS v0.12' 'nodejs' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -46,17 +46,17 @@ main() {
 
   fi
 
-  install_package 'Sublime-text' 'sublime-text-installer'
+  install_package 'Sublime-text' 'sublime-text-installer' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'GNOME Vim' 'vim-gnome'
+  install_package 'GNOME Vim' 'vim-gnome' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'ImageMagick' 'imagemagick'
-  install_package 'libmagickcore dev' 'libmagickcore-dev'
-  install_package 'libmagickwand dev' 'libmagickwand-dev'
+  install_package 'ImageMagick' 'imagemagick' '-qqy'
+  install_package 'libmagickcore dev' 'libmagickcore-dev' '-qqy'
+  install_package 'libmagickwand dev' 'libmagickwand-dev' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -67,12 +67,13 @@ main() {
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   # Apache2, PHP5 e MySQL
-  install_package 'Apache2' 'apache2'
-  install_package 'PHP5' 'php5'
-  install_package 'ibapache2-mod-php5' 'libapache2-mod-php5'
-  install_package 'php5-mcrypt' 'php5-mcrypt'
-  install_package 'mysql-server' 'mysql-server'
-  install_package 'php5-mysql' 'php5-mysql'
+  install_package 'Apache2' 'apache2' '-qqy'
+  install_package 'PHP5' 'php5' '-qqy'
+  install_package 'ibapache2-mod-php5' 'libapache2-mod-php5' '-qqy'
+  install_package 'php5-mcrypt' 'php5-mcrypt' '-qqy'
+  install_package 'php5-curl' 'php5-curl' '-qqy'
+  install_package 'mysql-server' 'mysql-server' '-y'
+  install_package 'php5-mysql' 'php5-mysql' '-qqy'
 
   sudo a2enmod rewrite
   sudo service apache2 restart
@@ -81,13 +82,13 @@ main() {
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   # PostgreSQL
-  install_package 'PostgreSQL' 'postgresql'
-  install_package 'postgresql-contrib' 'postgresql-contrib'
+  install_package 'PostgreSQL' 'postgresql' '-qqy'
+  install_package 'postgresql-contrib' 'postgresql-contrib' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   # PHPMyAdmin
-  install_package 'phpmyadmin' 'phpmyadmin'
+  install_package 'phpmyadmin' 'phpmyadmin' '-y'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

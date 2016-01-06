@@ -10,21 +10,21 @@ main() {
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'Musique' 'musique'
+  install_package 'Musique' 'musique' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'VLC' 'vlc'
+  install_package 'VLC' 'vlc' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'Dropbox' 'nautilus-dropbox'
+  install_package 'Dropbox' 'nautilus-dropbox' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'Ubuntu extras' 'ubuntu-restricted-extras'
-  install_package 'lib av codec' 'libavcodec-extra'
-  install_package 'lib av tools' 'libav-tools'
+  install_package 'Ubuntu extras' 'ubuntu-restricted-extras' '-qqy'
+  install_package 'lib av codec' 'libavcodec-extra' '-qqy'
+  install_package 'lib av tools' 'libav-tools' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -38,19 +38,19 @@ main() {
 
   fi
 
-  install_package 'Google Drive' 'grive-tools'
+  install_package 'Google Drive' 'grive-tools' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'GParted' 'gparted'
+  install_package 'GParted' 'gparted' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'byzanz GIF Recorder' 'byzanz'
+  install_package 'byzanz GIF Recorder' 'byzanz' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  install_package 'RAR' 'rar'
+  install_package 'RAR' 'rar' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -64,7 +64,7 @@ main() {
 
   fi
 
-  install_package 'Wine' 'wine'
+  install_package 'Wine' 'wine' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -78,7 +78,7 @@ main() {
 
   fi
 
-  install_package 'ScudCloud' 'scudcloud'
+  install_package 'ScudCloud' 'scudcloud' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -92,8 +92,8 @@ main() {
 
   fi
 
-  install_package 'numix-gtk-theme' 'numix-gtk-theme'
-  install_package 'numix-icon-theme-circle' 'numix-icon-theme-circle'
+  install_package 'numix-gtk-theme' 'numix-gtk-theme' '-qqy'
+  install_package 'numix-icon-theme-circle' 'numix-icon-theme-circle' '-qqy'
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

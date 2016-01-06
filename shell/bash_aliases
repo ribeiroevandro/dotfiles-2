@@ -18,7 +18,6 @@ alias c='clear'
 alias ch='history -c && > ~/.bash_history'
 alias e='vim'
 alias s='subl'
-alias g='git'
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias ll='ls -l'
 alias m='man'
@@ -26,6 +25,30 @@ alias map='xargs -n1'
 alias n='npm'
 alias q='exit'
 alias rm='rm -rf'
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+# Git alias
+
+alias g='git'
+alias gin='git init'
+alias gcn='git clone'
+alias gstt='git status'
+alias glg='git log'
+alias gb='git branch'
+alias gt='git tag'
+alias gch='git checkout'
+alias gmg='git merge'
+alias grb='git rebase'
+alias grbm='git rebase origin/master'
+alias gadd='git add -A .'
+alias gcmm='git commit -m'
+alias gcam='git commit -am'
+alias grs='git reset'
+alias grm='git rm'
+alias gdff='git diff'
+alias gsts='git stash'
+alias gstp='git stash pop'
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

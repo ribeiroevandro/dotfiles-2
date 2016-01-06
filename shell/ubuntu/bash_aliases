@@ -25,28 +25,6 @@ alias show-desktop-icons='gsettings set org.gnome.desktop.background show-deskto
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# Get local IP
-
-alias local-ip="ifconfig | \
-                | grep 'inet addr' \
-                | grep -v '127.0.0.1' \
-                | cut -d: -f2 \
-                | cut -d' ' -f1"
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-# Lock screen
-
-alias akf='gnome-screensaver-command --lock'
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-# Open
-
-alias o='xdg-open'
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 # Update
 
 alias u='sudo apt-get update \

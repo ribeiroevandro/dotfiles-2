@@ -213,14 +213,15 @@ main() {
 
     # Composer
     curl -s https://getcomposer.org/installer | php
-    sudo mv -f ./composer.phar /usr/local/bin/composer
+    move_file './composer.phar' '/usr/local/bin/composer'
+    composer --version
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     # Virtualhost | https://github.com/RoverWire/virtualhost
     wget -qO virtualhost https://raw.githubusercontent.com/RoverWire/virtualhost/master/virtualhost.sh
-    chmod +x virtualhost
-    sudo mv -f /usr/local/bin/virtualhost
+    sudo chmod +x ./virtualhost
+    move_file './virtualhost' '/usr/local/bin/virtualhost'
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

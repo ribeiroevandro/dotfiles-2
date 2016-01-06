@@ -59,3 +59,10 @@ upgrade() {
     execute 'sudo apt-get upgrade -qqy' 'upgrade'
 
 }
+
+move_file() {
+
+    # Install the newest versions of all packages installed
+    execute "sudo mv -fu $1 $2" "mv"
+
+}

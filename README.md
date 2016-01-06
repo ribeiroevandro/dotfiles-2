@@ -7,7 +7,7 @@
 ## Setup
 
 ```
-$ bash -c "$(wget -qO - https://raw.github.com/alrra/dotfiles/master/dotfiles)"
+$ bash -c "$(wget -qO - https://raw.github.com/nandomoreirame/dotfiles/master/dotfiles)"
 ```
 
 ## License

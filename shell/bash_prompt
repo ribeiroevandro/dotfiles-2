@@ -6,7 +6,7 @@ enable_color_support() {
 
     declare DOTFILES_DIR_PATH="$(dirname $(dirname $(readlink $BASH_SOURCE)))"
 
-    source "ubuntu/os/utils.sh"
+    source "$DOTFILES_DIR_PATH/os/utils.sh"
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -19,7 +19,7 @@ enable_color_support() {
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    source "ubuntu/shell/ubuntu/bash_colors"
+    source "$DOTFILES_DIR_PATH/shell/ubuntu/bash_colors"
 
 }
 

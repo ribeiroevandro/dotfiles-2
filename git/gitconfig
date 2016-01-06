@@ -1,3 +1,7 @@
+[user]
+    email = nandomoreira.me@gmail.com
+    name  = Fernando Moreira
+
 [alias]
 
     a   = commit --amend

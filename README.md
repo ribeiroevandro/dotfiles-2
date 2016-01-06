@@ -1,8 +1,8 @@
 # .files
 
-My Ubuntu dotfiles :dancers:
+> My Ubuntu dotfiles :dancers:
 
-based on [alrra/dotfiles](https://github.com/alrra/dotfiles)
+> Based on [alrra/dotfiles](https://github.com/alrra/dotfiles)
 
 ## Setup
 

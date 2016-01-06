@@ -196,7 +196,7 @@ main() {
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     # heroku
-    wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+    wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -218,7 +218,7 @@ main() {
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     # Virtualhost | https://github.com/RoverWire/virtualhost
-    wget -O virtualhost https://raw.githubusercontent.com/RoverWire/virtualhost/master/virtualhost.sh
+    wget -qO virtualhost https://raw.githubusercontent.com/RoverWire/virtualhost/master/virtualhost.sh
     chmod +x virtualhost
     sudo mv -f /usr/local/bin/virtualhost
 

@@ -16,6 +16,8 @@ declare -a DIRECTORIES=(
 
 main() {
 
+    execute "sudo chown -R $USER:$USER $WORKSPACE"
+
     for i in ${DIRECTORIES[@]}; do
         mkd "$i"
     done

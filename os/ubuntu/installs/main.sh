@@ -218,6 +218,14 @@ main() {
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+    # WP-CLI
+    curl -sO https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+    sudo chmod +x wp-cli.phar
+    move_file './wp-cli.phar' '/usr/local/bin/wp'
+    wp --info
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
     # Virtualhost | https://github.com/RoverWire/virtualhost
     wget -qO virtualhost https://raw.githubusercontent.com/RoverWire/virtualhost/master/virtualhost.sh
     sudo chmod +x ./virtualhost

@@ -4,8 +4,12 @@ cd "$(dirname "$BASH_SOURCE")" \
     && source 'utils.sh'
 
 declare -a DIRECTORIES=(
-    "$HOME/archive"
+    "$WORKSPACE/clients"
+    "$WORKSPACE/projects"
+    "$WORKSPACE/contrib"
+    "$WORKSPACE/playground"
     "$HOME/Downloads/torrents"
+    "$HOME/Downloads/bin"
 )
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

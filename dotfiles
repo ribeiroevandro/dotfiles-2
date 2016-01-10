@@ -6,7 +6,9 @@ declare -r DOTFILES_ORIGIN="git@github.com:$GITHUB_REPOSITORY.git"
 declare -r DOTFILES_TARBALL_URL="https://github.com/$GITHUB_REPOSITORY/tarball/master"
 declare -r DOTFILES_UTILS_URL="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/master/os/utils.sh"
 
-declare dotfilesDirectory="$HOME/projects/dotfiles"
+declare -r WORKSPACE="/var/www"
+
+declare dotfilesDirectory="$HOME/dotfiles"
 
 # ----------------------------------------------------------------------
 # | Helper Functions                                                   |
@@ -199,22 +201,6 @@ main() {
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    print_info 'Create directories'
-
-    ask_for_confirmation 'Do you want the additional directories to be created?'
-    printf '\n'
-
-    if answer_is_yes; then
-        ./os/create_directories.sh
-    fi
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    print_info 'Create symbolic links'
-    ./os/create_symbolic_links.sh
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
     print_info 'Install applications'
 
     ask_for_confirmation 'Do you want to install the applications/command line tools?'
@@ -231,6 +217,22 @@ main() {
         ./os/install_npm_packages.sh
 
     fi
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    print_info 'Create directories'
+
+    ask_for_confirmation 'Do you want the additional directories to be created?'
+    printf '\n'
+
+    if answer_is_yes; then
+        ./os/create_directories.sh
+    fi
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    print_info 'Create symbolic links'
+    ./os/create_symbolic_links.sh
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

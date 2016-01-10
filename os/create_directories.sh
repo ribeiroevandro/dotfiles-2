@@ -3,6 +3,8 @@
 cd "$(dirname "$BASH_SOURCE")" \
     && source 'utils.sh'
 
+declare -a WORKSPACE="/var/www"
+
 declare -a DIRECTORIES=(
     "$WORKSPACE/clients"
     "$WORKSPACE/projects"
